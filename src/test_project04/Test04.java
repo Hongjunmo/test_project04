@@ -3,13 +3,15 @@ package test_project04;
 import java.util.Scanner;
 
 import com.care.tv_hongjunmo.Test04_hjm_off;
+import com.care.washer_soyoung.Dewater_soyoung;
 
 public class Test04 {
 	public static void main(String[] args) {
 
 		Scanner input = new Scanner(System.in);
 		Test04_hjm_off hjm= new Test04_hjm_off();
-
+		Dewater_soyoung dewat = new Dewater_soyoung();
+		
 		int num;
 
 		System.out.println("---세탁기---");
@@ -37,6 +39,7 @@ public class Test04 {
 				break;
 			case 5:
 				System.out.println("탈수 시작");
+				dewat.dewater();
 				break;
 			default:
 				System.out.println("잘못 입력");
