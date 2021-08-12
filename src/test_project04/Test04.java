@@ -2,10 +2,13 @@ package test_project04;
 
 import java.util.Scanner;
 
+import com.care.tv_hongjunmo.Test04_hjm_off;
+
 public class Test04 {
 	public static void main(String[] args) {
 
 		Scanner input = new Scanner(System.in);
+		Test04_hjm_off hjm= new Test04_hjm_off();
 
 		int num;
 
@@ -24,6 +27,7 @@ public class Test04 {
 				break;
 			case 2:
 				System.out.println("전원을 끕니다");
+				hjm.PowerOff();
 				break;
 			case 3:
 				System.out.println("세탁 시작");
